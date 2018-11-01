@@ -56,7 +56,7 @@ class InteractiveRecord
     hash_key = hash.keys.first
     hash_values = hash.values.first
     sql = "SELECT * FROM #{self.table_name} WHERE #{hash_key} = #{hash_values}"
-    DB[:conn].exectue(sql)
+    DB[:conn].execute(sql)
   end
 
 
